@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 0 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 0 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Pedestal}
+\begin{frame}{Noise Distributions \@ high rate}
+ 
+	\vspace*{-15pt}\subfigs{\subfig{.5}[r]{PD0}[scCVD (\SI{6}{\deci\bel} attenuation)]}{\subfig{.5}[r]{PDH8}[pCVD]}
+
+	\begin{itemize} \itemfill
+		\item noise distribution agrees well with Gaussian even at high rates
+		\item extract noise by taking the sigma of the Gaussian fit
+		\item noise very similar for scCVD and pCVD diamond
+	\end{itemize}
+ 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Signal}
+\begin{frame}{Signal Distributions \@ high rate}
+ 
+ \vspace*{-15pt}\subfigs{\subfig{.5}[r]{SD0}[scCVD (\SI{6}{\deci\bel} attenuation)]}{\subfig{.5}[r]{SD1}[pCVD]}\vspace*{-10pt}
+
+	\begin{itemize} \itemfill
+		\item correction by the mean of the noise (baseline offset)
+		\item pCVD signal smaller and wider (less uniform)
+		\item FWHM/MPV:
+		\begin{itemize}
+			\item sCVD: \SI{\sim.3}{}
+			\item pCVD: \SI{\sim1.0}{}
+		\end{itemize}
+	\end{itemize}
+ 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Signal Maps}
+	
+	\subfigs{\subfig{.5}[r]{SM0}[scCVD (\SI{6}{\deci\bel} attenuation)]}{\subfig{.5}[r]{SMH8}[pCVD]}
+	
+	\begin{itemize} \itemfill
+		\item flat signal distribution in scCVD
+		\item signal response depending on region in the pCVD
+	\end{itemize}
+ 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Rate Studies in Non-Irradiated scCVD}
+
+	
+	\only<1>{\vspace*{-15pt}\fig[r]{.65}{S129Scans1}}
+	\only<2>{\vspace*{-15pt}\vspace*{.1\textheight}\fig[r]{.45}{S129P}\vspace*{.1\textheight}}
+	
+	\begin{itemize}\itemfill
+		\item lowest rate point scaled to 1
+		\item scCVD diamond shows now rate dependence within the measurement precision
+		\item noise stays constant
+	\end{itemize}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{pCVD - Non-Irradiated}
+ 
+	
+	\only<1>{\vspace*{-20pt}\fig[r]{.7}{Unirrad}\vspace*{-10pt}}
+	\only<2>{\vspace*{-20pt}\fig[r]{.7}{UnirradPos}\vspace*{-10pt}}
+	
+	\begin{itemize} \itemfill
+		\item lowest rate point scaled to 1
+		\item all non-irradiated pCVD diamonds have slight rate dependence
+		\item behaviour very similar for both positive and negative bias voltage
+		\item II6-97 did not hold \SI[retain-explicit-plus]{+1000}{\volt}
+	\end{itemize}
+ 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Detailed Study of Rate Dependence}
+
+	\vspace*{-15pt}\fig[r]{.65}{PHF13}
+	
+	\begin{itemize}\itemfill
+		\item largest dependence found so far
+		\item very continuous and reproducible behaviour
+		\item only very weak theories for this behaviour \ra try to model it
+	\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Rate Studies in Irradiated pCVD}
+
+	\vspace*{-15pt}\fig[r]{.65}{B2Scans1}
+	
+	\begin{itemize}\itemfill
+		\item lowest rate point scaled to 1
+		\item pulse height very stable after irradiation
+		\item noise stays the same
+	\end{itemize}
+
+\end{frame}

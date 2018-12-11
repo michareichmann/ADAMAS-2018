@@ -1,0 +1,82 @@
+\section{Analysis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 0 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Waveforms}
+\begin{frame}{Waveforms}
+
+	\vspace*{-20pt}
+	\fig[r]{.3}{SignalWaveform}\vspace*{-20pt}
+	\fig{.3}{SignalWaveforms30000}\vspace*{-10pt}
+
+	\begin{itemize}\itemfill
+		\item most frequent peak (@ \SI{\sim70}{ns}) \ra signal from triggered particle
+		\item other peaks from other bunches \ra resolve bunch spacing of PSI beam: \SI{\sim19.8}{ns}
+		\item signals in pre-signal bunch forbidden \ra noise extraction
+	\end{itemize}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Signal}
+\begin{frame}{Signal Definition \& Calculation}
+ 
+	\vspace*{-10pt}
+	\fig[r]{.44}{intpeaks}
+	
+	\begin{itemize}\itemfill
+		\item perform DRS4 timing correction (circular buffer with varying cell size: \SI{.5\pm.3}{\nano\second})
+		\item define signal region: \SI{\sim\pm10}{\nano\second} around peak of the triggered signal \ra [\SI{60}{\nano\second}, \SI{80}{\nano\second}]
+		\item signal: finding the peak in the signal region and integrate around it [\SI{-4}{\nano\second}, \SI{6}{\nano\second}]
+		\item pedestal: same integral in the centre of the pre-trigger bunch \ra [\SI{40}{\nano\second}, \SI{60}{\nano\second}]
+	\end{itemize}
+ 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{SNR}
+\begin{frame}{Signal To Noise Ratio}
+	
+	\subfigs{\subfig{.5}[r]{SNR1}}{\subfig{.5}[r]{SNR2}}
+	
+	\begin{itemize}\itemfill
+		\item left length = integration width to the left of the peak position
+		\item optimise SNR by scanning the integral width in both directions
+		\item maximum values around the FWHM of the peak
+		\item wide plateau around the maximum
+	\end{itemize}
+ 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Cuts}
+\begin{frame}{Event Cuts}
+
+	\begin{itemize}
+		\item separate pedestal and signal
+	\end{itemize}
+	
+	\begin{minipage}{.4\textwidth}
+		\textbf{\underline{Exclude Events:}}
+		\begin{itemize}
+			\item saturated
+			\item pulser
+			\item incomplete tracks
+			\item wrong peak timing
+			\item outside fiducial region
+			\item during beam interruption
+		\end{itemize}\vspace*{5pt}
+		\textbf{\underline{Also cuts on:}}
+		\begin{itemize}
+		 \item track $\upchi^2$ in x- and y-direction
+		 \item track angle
+		 \item pedestal sigma
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{.55\textwidth}
+		\fig[r]{.7}{Cuts}
+	\end{minipage}
+	
+	\begin{itemize}
+		\item after all cuts usually \SI{\sim25}{\%} event left
+	\end{itemize}
+
+
+\end{frame}
+

@@ -1,0 +1,34 @@
+% BEGIN PREAMBEL
+\documentclass[9pt, xcolor=dvipsnames, table]{beamer}
+\usepackage[british]{babel}
+
+\input{extrapackages}
+\input{settings}
+
+\input{newcommands}
+\input{HeadLine}
+\input{FootLine}
+\input{SectionPage}
+\input{TitlePageSettings}
+
+\title[Pad Analysis]{Analysis of CVD Diamond Pad Detectors}
+\subtitle{ETH Pixel/Diamond Meeting}
+\titlegraphic{PadFull1}
+% END PREAMBEL
+
+\begin{document}
+
+\include{TitlePage}
+\include{TableOfContents}
+
+\include{Introduction}
+\include{TestSite}
+\include{Setup}
+\include{Currents}
+\include{Analysis}
+\include{Results}
+
+\include{Conclusion}
+\include{DelFin} % FINAL PAGE
+
+\end{document} % DOCUMENT END
