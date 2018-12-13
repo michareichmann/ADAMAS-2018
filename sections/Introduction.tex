@@ -17,14 +17,18 @@
         \end{itemize}}
     
     \uncover<3->{
-        \vspace*{5pt}\textbf{\underline{PhD Topics}}
+        \vspace*{5pt}\textbf{\underline{Investigation of Rate Effects:}}
         \begin{itemize}\itemfill\vspace*{5pt}
-            \only<3>{\item Pad Detectors}
-            \only<4>{\item \good{Pad Detectors} \ra investigate behaviour at different particle rates}
-            \item Pixel Detectors (Analysis)
-            \item 3D Pixel Detectors (Analysis)
-            \item High Resolution Studies
+						\alt<3>{
+							\item Pad Detectors \ra whole diamond as single cell readout
+							\item Pixel Detectors \ra diamond sensor on pixel readout chip
+							\item 3D Pixel Detectors \ra 3D diamond detector on pixel readout chip}
+							{
+							\item \good{Pad Detectors} \ra this talk
+							\item \fadeout{Pixel Detectors}
+							\item \fadeout{3D Pixel Detectors}}
         \end{itemize}}
+        \pause[4]
 	
 \end{frame}
 
@@ -70,20 +74,20 @@
 		\item investigation of two different diamond types:
 	\end{itemize}
 	
-	\subfigs{\subfig{.45}{scDia}[single-crystalline CVD]}{\subfig{.45}{pCVD1}[poly-crystalline CVD (courtesy of E6)]}
+	\subfigs{\subfig[.48]{.41}{scDia}[single-crystalline CVD]}{\subfig[.43]{.41}{pCVD1}[poly-crystalline CVD (courtesy of E6)]}
 	
 	\hspace*{10pt}
-	\begin{minipage}{5.5cm}
+	\begin{minipage}{6cm}
 		\begin{itemize}
 			\item only small sizes (\SI{\sim.25}{cm^2})
 		\end{itemize}
 	\end{minipage}
 	\hspace*{2pt}
-	\begin{minipage}{5.5cm}
+	\begin{minipage}{5cm}
 		\begin{itemize}
 			\item large wafers (\SIrange{5}{6}{''} \diameter)
 		\end{itemize}
-	\end{minipage}
+	\end{minipage}\vspace*{5pt}
 	
 	\begin{itemize}
 		\item pCVD signals smaller than scCVD (1:2) in planar configuration

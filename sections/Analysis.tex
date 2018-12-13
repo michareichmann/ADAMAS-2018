@@ -4,11 +4,11 @@
 \begin{frame}{Waveforms}
 
 	\vspace*{-20pt}
-	\fig[r]{.3}{SignalWaveform}\vspace*{-20pt}
-	\fig{.3}{SignalWaveforms30000}\vspace*{-10pt}
+	\fig[r]{.3}{WFN}\vspace*{-20pt}
+	\fig[r]{.3}{PP}[Peak timings.]\vspace*{-10pt}
 
 	\begin{itemize}\itemfill
-		\item most frequent peak (@ \SI{\sim70}{ns}) \ra signal from triggered particle
+		\item most frequent peak (@ \SI{\sim35}{ns}) \ra signal from triggered particle
 		\item other peaks from other bunches \ra resolve bunch spacing of PSI beam: \SI{\sim19.8}{ns}
 		\item signals in pre-signal bunch forbidden \ra noise extraction
 	\end{itemize}
@@ -64,7 +64,7 @@
 		\textbf{\underline{Also cuts on:}}
 		\begin{itemize}
 		 \item track $\upchi^2$ in x- and y-direction
-		 \item track angle
+		 \item track slope
 		 \item pedestal sigma
 		\end{itemize}
 	\end{minipage}
@@ -77,6 +77,18 @@
 		\item after all cuts usually \SI{\sim25}{\%} event left
 	\end{itemize}
 
-
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Track Slope}
+\begin{frame}{Track Slope}
+	
+	\subfigs{\subfig{.5}[r]{TAX}[Track angle in X]}{\subfig{.5}[r]{TAY}[Track angle in Y]}
+	
+	\begin{itemize}\itemfill
+		\item only take events with \SI{\pm1}{\degree} around the most probable slope
+		\item slope has direct influence on the track length inside the sensor
+		\item slope distribution slightly changes in every setup 
+	\end{itemize}
+ 
 \end{frame}
 
